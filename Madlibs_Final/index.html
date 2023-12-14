@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Mad Libs Story Generator</title>
+</head>
+<body>
+    <header>
+        <h1>Let's generate a creative story</h1>
+    </header>
+    <div class="container">
+        <p id="intro-text">Fill in the blanks below to create your own story!</p>
+        <form id="madlibs-form">
+            <!-- Fill in the blanks -->
+            <label for="noun">Noun 1:</label>
+            <input type="text" id="noun1" class="madlibs-input" placeholder="e.g., cat">
+
+            <label for="verb">Verb 1:</label>
+            <input type="text" id="verb1" class="madlibs-input" placeholder="e.g., ran">
+
+            <label for="adjective">Adjective 1:</label>
+            <input type="text" id="adjective1" class="madlibs-input" placeholder="e.g., happy">
+
+            <label for="place">Place:</label>
+            <input type="text" id="place" class="madlibs-input" placeholder="e.g., park">
+
+            <label for="verb">Verb 2:</label>
+            <input type="text" id="verb2" class="madlibs-input" placeholder="e.g., jumped">
+
+            <label for="noun">Noun 2:</label>
+            <input type="text" id="noun2" class="madlibs-input" placeholder="e.g., dog">
+
+            <label for="adjective">Adjective 2:</label>
+            <input type="text" id="adjective2" class="madlibs-input" placeholder="e.g., funny">
+
+            <label for="emotion">Emotion:</label>
+            <input type="text" id="emotion" class="madlibs-input" placeholder="e.g., excited">
+
+            <label for="verb">Verb 3:</label>
+            <input type="text" id="verb3" class="madlibs-input" placeholder="e.g., sang">
+
+            <label for="noun">Noun 3:</label>
+            <input type="text" id="noun3" class="madlibs-input" placeholder="e.g., tree">
+
+            <button type="button" onclick="generateStory()">Generate Story</button>
+        </form>
+
+        <!-- Story Display -->
+        <div id="story-display" class="story-container"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
